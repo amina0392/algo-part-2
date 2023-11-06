@@ -19,7 +19,7 @@
     <br/>
     <label>Mon nombre chance</label>
     <br/>
-    <input type="text" id="8" placeholder="Mon nombre chance"/>
+    <input type="text" id="number" placeholder="Mon nombre chance"/>
     <button type="button" class="btn btn-primary" onclick="incrementNumber()">
         Afficher le nombre suivant
     </button>
@@ -29,7 +29,8 @@
     function incrementNumber() {
         let number = document.getElementById("number").value;
 
-        let number = document.getElementById("8+1").value;
+        number=Number(number)+1;
+        alert(number)
         
 
     }
