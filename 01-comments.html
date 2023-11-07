@@ -29,12 +29,17 @@
 <script type="text/javascript">
     // création de la fonction (message)
     function displayMessage() {
-        let firstname = document.getElementById("firstname").value; // création de la fonction (firstname), et attribuer la valeur qui lui correspond
-        let lastname = document.getElementById("lastname").value; // création de la fonction (lastname), et attribuer la valeur qui lui correspond
-        let fullname = firstname+ " " + lastname.toUpperCase(); // création de la fonction (fullname) et concaténation des valeurs (firstname) + (lastname)
-        let message = "Bonjour " + fullname; // création de la fonction (message) et concaténation de la fonction avec la valeur (fullname)
-
-        alert(message) // création d'un message d'alerte
+        
+        // création de la fonction (firstname), et attribuer la valeur qui lui correspond
+        let firstname = document.getElementById("firstname").value; 
+        // création de la fonction (lastname), et attribuer la valeur qui lui correspond
+        let lastname = document.getElementById("lastname").value; 
+        // création de la fonction (fullname) et concaténation des valeurs (firstname) + (lastname)
+        let fullname = firstname+ " " + lastname.toUpperCase(); 
+        // création de la fonction (message) et concaténation de la fonction avec la valeur (fullname)
+        let message = "Bonjour " + fullname; 
+        // création d'un message d'alerte
+        alert('Saisir votre prénom et votre nom') 
     }
 </script>
 </body>
