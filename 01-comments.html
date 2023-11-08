@@ -30,16 +30,16 @@
     // création de la fonction (message)
     function displayMessage() {
         
-        // création de la fonction (firstname), et attribuer la valeur qui lui correspond
+        // récupération de la valeur de l'input text identifié par "firstname"
         let firstname = document.getElementById("firstname").value; 
-        // création de la fonction (lastname), et attribuer la valeur qui lui correspond
+        // récupération de la valeur de l'input text identifié par "lastname"
         let lastname = document.getElementById("lastname").value; 
-        // création de la fonction (fullname) et concaténation des valeurs (firstname) + (lastname)
+        // concaténation des valeurs "firstname" et "lastname.toUpperCase"
         let fullname = firstname+ " " + lastname.toUpperCase(); 
-        // création de la fonction (message) et concaténation de la fonction avec la valeur (fullname)
+        // agrégation du mot "Bonjour + la valeur fullname"
         let message = "Bonjour " + fullname; 
         // création d'un message d'alerte
-        alert('Saisir votre prénom et votre nom') 
+        alert(message) 
     }
 </script>
 </body>
