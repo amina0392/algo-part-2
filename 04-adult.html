@@ -34,10 +34,12 @@
 </div>
 
 <script type="text/javascript">
+    const MAJORITY = 18;
+
     function verifyAge() {
         let age = document.getElementById("age").value;
         
-        if (age >= 18) {
+        if (age >= MAJORITY) {
             alert("Bienvenue sur le site")
 
         }
