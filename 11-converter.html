@@ -31,14 +31,28 @@
     </select>
 
     <br/>
-    <button type="button" class="btn btn-primary">
+    <button type="button" class="btn btn-primary" onclick="convert()">
         Connaître la valeur en USD->EUR ou EUR->USD
     </button>
 </div>
 
 <script type="text/javascript">
-    // 1 EUR = 1.0729 USD
-    // CODE HERE !
+    const Eur_To_Usd = 1.1015;
+
+    function convert() {
+        let value = document.getElementById("value").value;
+        let currencies = document.getElementById("currencies").value;
+
+        if (currencies === "eur") {
+            alert(value + "  Euros ->" +Number.parseFloat(value * Eur_To_Usd).toFixed(2) + "  Dollars ->");
+        }
+        else {
+            alert(value + "  Dollars ->" +Number.parseFloat(value * Eur_To_Usd).toFixed(2) + "  Euros ->")
+        }
+        
+
+    }
+    
 </script>
 </body>
 </html>

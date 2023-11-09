@@ -37,13 +37,31 @@
 </div>
 
 <script type="text/javascript">
+    // Déclaration du code promos par une constancte
     const VALID_PROMOTION_CODE = "10POUR100";
-
+    // Attribution des valeurs en les récupérant grace au "document.getElementById"
     function cartValue() {
         let articles = document.getElementById("articles");
         let selectedArticle = articles.options[articles.selectedIndex].value;
-
-        // CODE HERE !
+        let promotion = document.getElementById("promotion").value;
+        
+        /* Si la promotion est égale au code promos délcarer par la constance 
+        et que l'article 'one' est sélectionné, la valeur du panier doit tenir de la promos */
+        if (promotion === VALID_PROMOTION_CODE && selectedArticle === 'one') {
+            alert("La valeur de votre panier est de 27 €");
+        }
+        else if (promotion === VALID_PROMOTION_CODE && selectedArticle === 'two') {
+            alert("La valeur de votre panier est de 45 €");
+        }
+        else if (selectedArticle === 'one') {
+            alert("La valeur de votre panier est de 30 €");
+        }
+        else if (selectedArticle === 'two') {
+            alert("La valeur de votre panier est de 50 €");
+        }
+        else {
+            alert(" Veuillez selectionner un article");
+        }
     }
 </script>
 </body>

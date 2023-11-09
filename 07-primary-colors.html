@@ -38,7 +38,22 @@
         let colors = document.getElementById("colors");
         let secondaryColor = colors.options[colors.selectedIndex].value;
 
-        // CODE HERE !
+        if (secondaryColor === "green") {
+            alert("Vert est composé de bleu et de jaune");
+        }
+        else if (secondaryColor === "purple") {
+            alert("Violet est composé de rouge et de bleu");
+
+        }
+        else if (secondaryColor === "orange") {
+            alert("Orange est composé de rouge et de jaune");
+        }
+        else {
+            alert("cette couleur n'est pas valide");
+        }
+            
+            
+        
     }
 </script>
 </body>
